@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello, React (NO JSX)</title>
+  </head>
+  <body>
+    <!-- 1.empty element -->
+    <div id="root"></div>
+
+    <!-- 2.React Library -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <!-- 3.Render -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+
+    <script>
+      // 4.React element
+      const element = React.createElement("h1", null, "Hello React (NO JSX)");
+      // 5. Actually want to render on the page
+      ReactDOM.render(element, document.getElementById("root"));
+    </script>
+  </body>
+</html>
